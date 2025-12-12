@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: #00ffd5;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ffd5;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: #fff;
+}
+
+.hero span {
+  color: #00ffd5;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #00ffd5;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+section {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00ffd5;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.skills-grid, .project-grid, .blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-card, .project-card, .blog-post {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill-card:hover, .project-card:hover, .blog-post:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.read-more {
+  color: #00ffd5;
+  text-decoration: none;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+}
